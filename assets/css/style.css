@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #00fe78;
+  --white: #fff;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+/* 
+============================================
+    HERO SECTION START
+============================================
+*/
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background: url("../imgs/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.hero-section .hero-bg-img{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.hero-section:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.3);
+    z-index: -1;
+}
+.hero-section .hero-bg-img img{
+    width: 100%;
+}
+.hero-section h1 {
+  font-size: 13.5vw;
+  font-weight: 10;
+  letter-spacing: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--primary-color);
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.hero-section .text-btm{
+    font-size: 7px;
+    font-weight: bold;
+    position: absolute;
+    color: var(--white);
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+
+/* TOP NAVBAR */
+.top-navbar {
+  padding: 15px 36px;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+.top-navbar .home-icon svg {
+  fill: var(--primary-color);
+}
+
+.top-navbar .menu {
+  margin-left: 38px;
+}
+.top-navbar .menu ul li {
+  margin: 0 28px;
+}
+.top-navbar .menu ul li a {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: relative;
+}
+
+.top-navbar .menu ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 00%;
+  border-bottom: 2px solid var(--primary-color);
+  transition: 0.5s ease;
+}
+.top-navbar .menu ul li a:hover:after {
+  width: 100%;
+}
+.top-navbar .menu ul li a.active:after {
+  width: 80%;
+}
+/* TOP NAVBAR END */
+
+/* 
+============================================
+    HERO SECTION END
+============================================
+*/
+
+
+/* 
+============================================
+    ABOUT SECTION START
+============================================
+*/
+.about-section{
+    width: 100%;
+    /* min-height: 100vh; */
+    background: linear-gradient(to right, #00fe7777 80%, #00000015) ,url("../imgs/about-bg.png") ;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.about-section .about-container{
+    /* max-width: 1300px; */
+    margin: auto;
+}
+.about-section .about-img img{
+    width: 130%; 
+}
+.about-section .about-text h2{
+    font-size: 200px;
+    text-align: center;
+    letter-spacing: 20px;
+    color: var(--white);
+    font-weight: 100;
+}
+.about-section p{
+    font-size: 14px;
+    text-align: justify;
+    color: var(--white);
+}
+
+/* 
+============================================
+    ABOUT SECTION END
+============================================
+*/
