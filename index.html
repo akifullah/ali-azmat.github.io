@@ -1,92 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Azmat</title>
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+
     <!-- FONTAWESOME 5 ICON CSS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- FONTAWESOME 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
 
     <!-- CUSTOM CSS -->
-     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+
+
+
+
+    </style>
+
 </head>
+
 <body>
 
     <div class="wrapper">
-        <!-- HERO SECTION START-->
-         <header class="hero-section">
-            <nav class="top-navbar d-flex align-items-center">
-                <div class="home-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-                </div>
+
+        <!-- NAVBAR SECTION START -->
+        <nav id="topNav" class="top-navbar d-flex align-items-center">
+            <div class="home-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e8eaed">
+                    <path
+                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                </svg>
+            </div>
+            <div class="menu">
+                <ul class="list-unstyled d-flex align-items-center m-0">
+                    <li><a href="#">ALI</a></li>
+                    <li><a href="#" class="active">Album</a></li>
+                    <li><a href="#">Upcoming Tours</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+            </div>
+
+
+            <div class="right-section ms-auto d-flex align-items-center">
+                <form action="">
+                    <div class="form-wrap">
+                        <input type="text">
+                        <img src="assets/imgs/search.png" alt="">
+                    </div>
+                </form>
+                <ul class="list-unstyled d-flex align-items-center mb-0">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-spotify"></i></a></li>
+                    <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
+                </ul>
+
+                <button id="navToggler" class="nav-toggler d-block d-md-none"><i
+                        class="fa-solid fa-bars-staggered"></i></button>
+
+            </div>
+
+        </nav>
+        <!-- NAVBAR SECTION START -->
+
+        <!-- MOBILE BAVBAR START -->
+        <div class="mobile-menu-wrapper" id="menuWrapper">
+            <div class="mobile-nav" id="mobileNav">
+
+                <button id="navClose" class="close-btn"><i class="far fa-times-circle"></i></button>
+
                 <div class="menu">
-                    <ul class="list-unstyled d-flex align-items-center m-0">
+                    <ul class="list-unstyled  navs m-0">
                         <li><a href="#">ALI</a></li>
                         <li><a href="#" class="active">Album</a></li>
                         <li><a href="#">Upcoming Tours</a></li>
                         <li><a href="#">Links</a></li>
                     </ul>
-                </div>
 
-
-                <div class="right-section ms-auto d-flex align-items-center">
-                    <form action="">
-                        <div class="form-wrap">
-                            <input type="text">
-                            <img src="assets/imgs/search.png" alt="">
-                        </div>
-                    </form>
-                    <ul class="list-unstyled d-flex align-items-center mb-0">
+                    <ul class="list-unstyled icons d-flex align-items-center mb-0">
                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"></a><i class="fab fa-instagram"></i></li>
-                        <li><a href="#"></a><i class="fab fa-spotify"></i></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-spotify"></i></a></li>
                         <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
                     </ul>
+
                 </div>
-                
-            </nav>
+
+            </div>
+        </div>
+        <!-- MOBILE BAVBAR END -->
+
+
+
+
+
+        <!-- HERO SECTION START-->
+        <header class="hero-section">
 
             <h1>ALI AZMAT</h1>
             <span class="text-btm">OFFICIAL WEBSITE</span>
             <div class="hero-bg-img">
                 <img src="assets/imgs/hero.png" alt="">
             </div>
-            
-         </header>
+
+        </header>
         <!-- HERO SECTION END-->
 
         <!-- ABOUT SECTION START -->
-         <section class="about-section">
+        <section class="about-section">
             <div class="about-container container">
                 <div class="row ">
-                    <div class="col-md-5 align-self-end position-relative">
+                    <div class="col-lg-5 order-1 order-lg-0 align-self-end position-relative">
                         <div class="about-img">
                             <img src="assets/imgs/about.png" width="100%" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7 ms-auto align-self-center">
+                    <div class="col-lg-7 order-0 order-lg-1 ms-auto align-self-center">
                         <div class="about-text">
                             <h2>ALI</h2>
-                            <p><strong>My guitar, my bike and my fans</strong> without them I’m not me”. This single quote defines the whole life circle of <strong>Ali Azmat</strong> – without whom Pakistani music industry would not be standing where it is now. The rock chapter could easily go unnoticed have it not carried the brilliance of <strong>Ali</strong>. His innovative and daring infusions of rock with sufi music of the South Asia has given a whole new dimension to music. <strong>Ali</strong> is an international icon, a global identity, and world ambassador for music and peace. Pakistani music industry can never be written without a complete section dedicated to <strong>Ali Azmat</strong>. He has set his marks and reached unprecedented recognition in international arena.
+                            <p><strong>My guitar, my bike and my fans</strong> without them I’m not me”. This single
+                                quote defines the whole life circle of <strong>Ali Azmat</strong> – without whom
+                                Pakistani music industry would not be standing where it is now. The rock chapter could
+                                easily go unnoticed have it not carried the brilliance of <strong>Ali</strong>. His
+                                innovative and daring infusions of rock with sufi music of the South Asia has given a
+                                whole new dimension to music. <strong>Ali</strong> is an international icon, a global
+                                identity, and world ambassador for music and peace. Pakistani music industry can never
+                                be written without a complete section dedicated to <strong>Ali Azmat</strong>. He has
+                                set his marks and reached unprecedented recognition in international arena.
                             </p>
 
-                            <p><strong>Ali</strong> stepped in Pakistani music arena when there was very little media penetration in the masses. Most of the singers who chose to pick up ‘pop’ music, preferred to go solo. And they are treated as icons themselves. <strong>Ali</strong> bravely took up the challenge and used his originality to make his presence felt. Started with one of the first rock/pop bands of the country, ‘Jupiters’, Ali gave the music industry the ever green song, ‘<strong>Dosti</strong>’.
+                            <p><strong>Ali</strong> stepped in Pakistani music arena when there was very little media
+                                penetration in the masses. Most of the singers who chose to pick up ‘pop’ music,
+                                preferred to go solo. And they are treated as icons themselves. <strong>Ali</strong>
+                                bravely took up the challenge and used his originality to make his presence felt.
+                                Started with one of the first rock/pop bands of the country, ‘Jupiters’, Ali gave the
+                                music industry the ever green song, ‘<strong>Dosti</strong>’.
                             </p>
-                            <p>In 1990, Ali started the most famous and accredited band of South Asia, <strong>‘Junoon’, as lead vocalist</strong>. This was the actual start of legendary career of Ali. The music produced by Junoon marked a new chapter in the music industry. It was a beautiful and mesmerizing blend of rock and sufi music. Junoon also produced a few hits based on socio-political issue of the country. Over a decade, Junoon produced around 20 albums. For which 20 million copies were sold worldwide.</p>
-                            
-                            <p>In 1999, Junoon won the “<strong>Best International Group</strong>” award at the <strong>Channel [V] Music Awards</strong> in New Delhi. In 2001 Ali appeared in the VH1 News Special Islamabad Rock City, a rockumentary on Junoon hosted by Susan Sarandon. In October 2001, he sang it again, this time on the floor of the United Nations General Assembly with an Indian band. The New York, Times and the Village Voice among others wrote rave reviews of his performance, the only rock concert ever held at the UN. In 2002, Ali was nominated for an <strong>Emmy award</strong>.</p>
+                            <p>In 1990, Ali started the most famous and accredited band of South Asia, <strong>‘Junoon’,
+                                    as lead vocalist</strong>. This was the actual start of legendary career of Ali. The
+                                music produced by Junoon marked a new chapter in the music industry. It was a beautiful
+                                and mesmerizing blend of rock and sufi music. Junoon also produced a few hits based on
+                                socio-political issue of the country. Over a decade, Junoon produced around 20 albums.
+                                For which 20 million copies were sold worldwide.</p>
+
+                            <p>In 1999, Junoon won the “<strong>Best International Group</strong>” award at the
+                                <strong>Channel [V] Music Awards</strong> in New Delhi. In 2001 Ali appeared in the VH1
+                                News Special Islamabad Rock City, a rockumentary on Junoon hosted by Susan Sarandon. In
+                                October 2001, he sang it again, this time on the floor of the United Nations General
+                                Assembly with an Indian band. The New York, Times and the Village Voice among others
+                                wrote rave reviews of his performance, the only rock concert ever held at the UN. In
+                                2002, Ali was nominated for an <strong>Emmy award</strong>.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
         <!-- ABOUT SECTION END -->
 
+        <!-- ALBUM SECTION START -->
+        <section class="album-section">
+            <h2 class="text-center text-uppercase">Albums</h2>
+            <!-- Slider Start -->
+            <div class="album-slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="assets/imgs/slides/slide1.png" alt="">
+                            </div>
+                            <h5 class="text-center">1995</h5>
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+
+            </div>
+            <!-- Slider end -->
+        </section>
+        <!-- ALBUM SECTION END -->
+
+
+        <!-- UPCOMING SECTION START -->
+        <section class="upcoming">
+            <div class="container upcoming-container">
+                <h2>UPCOMING TOURS</h2>
+
+                <div class="row">
+                    <div class="col-xl-9">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- UPCOMING SECTION END -->
+
+        <!-- LINKS SECTION START -->
+        <section class="links-section">
+            <div class="container links-container">
+                <h2>LINKS</h2>
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="link text-start">
+                        <a href="#">
+                            <h4>Facebook</h4>
+                        </a>
+                    </div>
+                    <div class="link text-center">
+                        <a href="#">
+                            <h4>INSTAGRAM</h4>
+                        </a>
+                    </div>
+                    <div class="link text-end">
+                        <a href="#">
+                            <h4>SPOTIFY</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- LINKS SECTION END -->
+
+
     </div>
-    
+
+    <!-- JQUERY CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- SWIPER SLIDER JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <script>
+        const navToggler = document.getElementById("navToggler");
+        const mobileNav = document.getElementById("mobileNav");
+        const navClose = document.getElementById("navClose");
+        const menuWrapper = document.getElementById("menuWrapper");
+        const topNav = document.getElementById("topNav");
+
+
+        var prevScrollpos = window.pageYOffset;
+        console.log(prevScrollpos)
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos < currentScrollPos) {
+                topNav.style.background = "#000";
+                topNav.style.position = "fixed";
+                topNav.style.top = "0";
+            }
+            prevScrollpos = currentScrollPos;
+            if (window.pageYOffset < 100) {
+                topNav.style.background = "transparent";
+
+            }
+            console.log(prevScrollpos)
+        }
+
+
+        mobileNav.addEventListener("click", function (e) {
+            menuWrapper.classList.add("active");
+        }, true);
+        navToggler.addEventListener("click", function (e) {
+            menuWrapper.classList.add("active");
+        });
+        navClose.addEventListener("click", function (e) {
+            menuWrapper.classList.remove("active");
+        });
+        document.addEventListener("click", function () {
+            menuWrapper.classList.remove("active");
+        }, true);
+
+
+        // ALBUM SLIDER 
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            slidesPerView: "20",
+            grabCursor: true,
+            centeredSlides: true,
+            initialSlide: 2,
+            loop: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 30,
+                modifier: 4,
+                slideShadows: true,
+            },
+            //   pagination: {
+            //     el: ".swiper-pagination",
+            //   },
+        });
+    </script>
 </body>
+
 </html>
