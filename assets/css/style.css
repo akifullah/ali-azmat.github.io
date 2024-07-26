@@ -684,10 +684,15 @@ body {
   font-weight: 600;
   color: var(--white);
 }
-
+@media (max-width: 767px){
+  .footer-section p{
+    text-align: center;
+  }
+  }
 @media (max-width: 575px){
 .footer-section p{
-  font-size: 12px;
+  font-size: 11px;
+  text-align: center;
 }
 }
 
