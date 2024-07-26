@@ -127,7 +127,7 @@ body {
 .top-navbar {
   padding: 15px 36px;
   position: fixed;
-  top: 20px;
+  top: 00px;
   width: 100%;
   transition: .5s ease;
   z-index: 100;
@@ -666,3 +666,22 @@ body {
     LINKS SECTION END
 ============================================
 */
+
+/* FOOTER SECTION START */
+.footer-section{
+  background-color: var(--black);
+  padding: 0px 0;
+  padding: 10px 0;
+}
+.footer-section p{
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--white);
+  opacity: 0.8;
+}
+.footer-section p a{
+  opacity: 1;
+  font-weight: 600;
+  color: var(--white);
+}
+/* FOOTER SECTION END */
