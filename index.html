@@ -37,19 +37,22 @@
 
         <!-- NAVBAR SECTION START -->
         <nav id="topNav" class="top-navbar d-flex align-items-center">
+            <button id="navToggler" class="nav-toggler d-block d-md-none"><i class="fa-solid fa-bars"></i></button>
             <div class="home-icon" id="home">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                    fill="#e8eaed">
-                    <path
-                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
-                </svg>
+                <a href="#home-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg>
+                </a>
             </div>
             <div class="menu">
                 <ul class="list-unstyled d-flex align-items-center m-0" id="menus">
-                    <li class="li1"><a href="#">ALI</a></li>
-                    <li class="li2"><a href="#" class="active">Album</a></li>
-                    <li class="li3"><a href="#">Upcoming Tours</a></li>
-                    <li class="li4"><a href="#">Links</a></li>
+                    <li class="li1"><a href="#ali-section">ALI</a></li>
+                    <li class="li2"><a href="#album-section">Album</a></li>
+                    <li class="li3"><a href="#upcoming-section">Upcoming Tours</a></li>
+                    <li class="li4"><a href="#links-section">Links</a></li>
                 </ul>
             </div>
 
@@ -68,8 +71,7 @@
                     <li class="li8"><a href="#"><i class="fab fa-soundcloud"></i></a></li>
                 </ul>
 
-                <button id="navToggler" class="nav-toggler d-block d-md-none"><i
-                        class="fa-solid fa-bars-staggered"></i></button>
+
 
             </div>
 
@@ -83,11 +85,11 @@
                 <button id="navClose" class="close-btn"><i class="far fa-times-circle"></i></button>
 
                 <div class="menu">
-                    <ul class="list-unstyled  navs m-0">
-                        <li class="ml1"><a href="#">ALI</a></li>
-                        <li class="ml2"><a href="#" class="active">Album</a></li>
-                        <li class="ml3"><a href="#">Upcoming Tours</a></li>
-                        <li class="ml4"><a href="#">Links</a></li>
+                    <ul class="list-unstyled  navs m-0" id="mobile-menus">
+                        <li class="ml1"><a href="#ali-section">ALI</a></li>
+                        <li class="ml2"><a href="#album-section">Album</a></li>
+                        <li class="ml3"><a href="#upcoming-section">Upcoming Tours</a></li>
+                        <li class="ml4"><a href="#links-section">Links</a></li>
                     </ul>
 
                     <ul class="list-unstyled icons d-flex align-items-center mb-0">
@@ -108,19 +110,21 @@
 
 
         <!-- HERO SECTION START-->
-        <header class="hero-section">
+        <section class="hero-section" id="home-section">
 
-            <h1 class="name"><span class="s1">A</span><span class="s2">L</span><span class="s3">I</span> <span class="s4">A</span><span class="s5">Z</span><span class="s6">M</span><span class="s7">A</span><span class="s8">T</span></h1>
+            <h1 class="name"><span class="s1">A</span><span class="s2">L</span><span class="s3">I</span> <span
+                    class="s4">A</span><span class="s5">Z</span><span class="s6">M</span><span class="s7">A</span><span
+                    class="s8">T</span></h1>
             <span class="text-btm">OFFICIAL WEBSITE</span>
             <div class="hero-bg-img">
                 <img src="assets/imgs/hero.png" alt="">
             </div>
 
-        </header>
+        </section>
         <!-- HERO SECTION END-->
 
         <!-- ABOUT SECTION START -->
-        <section class="about-section">
+        <section class="about-section" id="ali-section">
             <div class="about-container container">
                 <div class="row ">
                     <div class="col-lg-5 order-1 order-lg-0 align-self-end position-relative">
@@ -172,7 +176,7 @@
         <!-- ABOUT SECTION END -->
 
         <!-- ALBUM SECTION START -->
-        <section class="album-section">
+        <section class="album-section" id="album-section">
             <h2 class="text-center text-uppercase">Albums</h2>
             <!-- Slider Start -->
             <div class="album-slider">
@@ -238,7 +242,7 @@
 
 
         <!-- UPCOMING SECTION START -->
-        <section class="upcoming">
+        <section class="upcoming" id="upcoming-section">
             <div class="container upcoming-container">
                 <h2>UPCOMING TOURS</h2>
 
@@ -341,7 +345,7 @@
         <!-- UPCOMING SECTION END -->
 
         <!-- LINKS SECTION START -->
-        <section class="links-section">
+        <section class="links-section" id="links-section">
             <div class="container links-container">
                 <h2>LINKS</h2>
 
@@ -383,35 +387,67 @@
 
     <script>
 
+        // LINK AND SECTION ACTIVATION
+        let sections = document.querySelectorAll("section");
+        let navLinks = document.querySelectorAll("#menus li a")
+        let mNavLinks = document.querySelectorAll("#mobile-menus li a")
+        window.addEventListener("scroll", () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 30;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute("id");
 
+                if (top >= offset && top < offset + height) {
+                    console.log(id)
+                    navLinks.forEach(link => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href") == "#" + id) {
+                            link.classList.add("active");
+                        }
+                    });
+                    mNavLinks.forEach(link => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href") == "#" + id) {
+                            link.classList.add("active");
+                            console.log(link)
+                        }
+                    });
 
+                    // console.log(document.querySelector('#menus li a[href*=' + id + ']'))
+                }
+
+            })
+        });
+
+        // GASAP ANIMATION
         let tl = gsap.timeline();
         let tl2 = gsap.timeline();
-        
-        tl.from("#home", { x: -250, opacity: 0 , ease: "back.out", duration: 1  });
-        tl.from("#menus .li1", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl.from("#menus .li2", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl.from("#menus .li3", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl.from("#menus .li4", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        
-        tl2.from("#topForm", { y: -150, opacity: 0 , ease: "back.out", duration: 1 });
-        tl2.from("#navToggler", { x: 150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl2.from(".li5", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl2.from(".li6", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl2.from(".li7", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
-        tl2.from(".li8", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+
+        tl.from("#home", { y: -150, opacity: 0, ease: "back.out", duration: 1 });
+        tl.from("#menus .li1", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li2", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li3", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li4", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+
+        tl2.from("#topForm", { y: -150, opacity: 0, ease: "back.out", duration: 1 });
+        tl2.from("#navToggler", { x: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li5", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li6", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li7", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li8", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
 
         let tl3 = gsap.timeline();
 
-        tl3.from(".s1", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s2", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s3", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s4", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s5", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s6", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s7", {x: 200, opacity: 0, duration: .3})
-        tl3.from(".s8", {x: 200, opacity: 0, duration: .3})
-        
+        tl3.from(".s1", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s2", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s3", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s4", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s5", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s6", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s7", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s8", { x: 200, opacity: 0, duration: .3 })
+
 
         // NAVBAR TOGGLER
         const navToggler = document.getElementById("navToggler");
@@ -434,7 +470,6 @@
                 topNav.style.background = "transparent";
 
             }
-            console.log(prevScrollpos)
         }
 
 
@@ -445,11 +480,11 @@
             menuWrapper.classList.add("active");
 
             let tl4 = gsap.timeline();
-            tl4.from(".ml1", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
-            tl4.from(".ml2", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
-            tl4.from(".ml3", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
-            tl4.from(".ml4", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
-            
+            tl4.from(".ml1", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+            tl4.from(".ml2", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+            tl4.from(".ml3", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+            tl4.from(".ml4", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+
         });
         navClose.addEventListener("click", function (e) {
             menuWrapper.classList.remove("active");
