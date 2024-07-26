@@ -37,7 +37,7 @@
 
         <!-- NAVBAR SECTION START -->
         <nav id="topNav" class="top-navbar d-flex align-items-center">
-            <div class="home-icon">
+            <div class="home-icon" id="home">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#e8eaed">
                     <path
@@ -45,27 +45,27 @@
                 </svg>
             </div>
             <div class="menu">
-                <ul class="list-unstyled d-flex align-items-center m-0">
-                    <li><a href="#">ALI</a></li>
-                    <li><a href="#" class="active">Album</a></li>
-                    <li><a href="#">Upcoming Tours</a></li>
-                    <li><a href="#">Links</a></li>
+                <ul class="list-unstyled d-flex align-items-center m-0" id="menus">
+                    <li class="li1"><a href="#">ALI</a></li>
+                    <li class="li2"><a href="#" class="active">Album</a></li>
+                    <li class="li3"><a href="#">Upcoming Tours</a></li>
+                    <li class="li4"><a href="#">Links</a></li>
                 </ul>
             </div>
 
 
             <div class="right-section ms-auto d-flex align-items-center">
-                <form action="">
+                <form action="" id="topForm">
                     <div class="form-wrap">
                         <input type="text">
                         <img src="assets/imgs/search.png" alt="">
                     </div>
                 </form>
                 <ul class="list-unstyled d-flex align-items-center mb-0">
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-spotify"></i></a></li>
-                    <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
+                    <li class="li5"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="li6"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="li7"><a href="#"><i class="fab fa-spotify"></i></a></li>
+                    <li class="li8"><a href="#"><i class="fab fa-soundcloud"></i></a></li>
                 </ul>
 
                 <button id="navToggler" class="nav-toggler d-block d-md-none"><i
@@ -84,10 +84,10 @@
 
                 <div class="menu">
                     <ul class="list-unstyled  navs m-0">
-                        <li><a href="#">ALI</a></li>
-                        <li><a href="#" class="active">Album</a></li>
-                        <li><a href="#">Upcoming Tours</a></li>
-                        <li><a href="#">Links</a></li>
+                        <li class="ml1"><a href="#">ALI</a></li>
+                        <li class="ml2"><a href="#" class="active">Album</a></li>
+                        <li class="ml3"><a href="#">Upcoming Tours</a></li>
+                        <li class="ml4"><a href="#">Links</a></li>
                     </ul>
 
                     <ul class="list-unstyled icons d-flex align-items-center mb-0">
@@ -110,7 +110,7 @@
         <!-- HERO SECTION START-->
         <header class="hero-section">
 
-            <h1>ALI AZMAT</h1>
+            <h1 class="name"><span class="s1">A</span><span class="s2">L</span><span class="s3">I</span> <span class="s4">A</span><span class="s5">Z</span><span class="s6">M</span><span class="s7">A</span><span class="s8">T</span></h1>
             <span class="text-btm">OFFICIAL WEBSITE</span>
             <div class="hero-bg-img">
                 <img src="assets/imgs/hero.png" alt="">
@@ -375,11 +375,45 @@
     <!-- JQUERY CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-
     <!-- SWIPER SLIDER JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
     <script>
+
+
+
+        let tl = gsap.timeline();
+        let tl2 = gsap.timeline();
+        
+        tl.from("#home", { x: -250, opacity: 0 , ease: "back.out", duration: 1  });
+        tl.from("#menus .li1", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl.from("#menus .li2", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl.from("#menus .li3", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl.from("#menus .li4", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        
+        tl2.from("#topForm", { y: -150, opacity: 0 , ease: "back.out", duration: 1 });
+        tl2.from("#navToggler", { x: 150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl2.from(".li5", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl2.from(".li6", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl2.from(".li7", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+        tl2.from(".li8", { y: -150, opacity: 0 , ease: "back.out", duration: .3 });
+
+        let tl3 = gsap.timeline();
+
+        tl3.from(".s1", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s2", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s3", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s4", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s5", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s6", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s7", {x: 200, opacity: 0, duration: .3})
+        tl3.from(".s8", {x: 200, opacity: 0, duration: .3})
+        
+
+        // NAVBAR TOGGLER
         const navToggler = document.getElementById("navToggler");
         const mobileNav = document.getElementById("mobileNav");
         const navClose = document.getElementById("navClose");
@@ -388,7 +422,6 @@
 
 
         var prevScrollpos = window.pageYOffset;
-        console.log(prevScrollpos)
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos < currentScrollPos) {
@@ -410,6 +443,13 @@
         }, true);
         navToggler.addEventListener("click", function (e) {
             menuWrapper.classList.add("active");
+
+            let tl4 = gsap.timeline();
+            tl4.from(".ml1", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
+            tl4.from(".ml2", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
+            tl4.from(".ml3", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
+            tl4.from(".ml4", {x: 150, opacity: 0, duration: .3, ease: "back.out"})
+            
         });
         navClose.addEventListener("click", function (e) {
             menuWrapper.classList.remove("active");
