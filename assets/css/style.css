@@ -684,4 +684,11 @@ body {
   font-weight: 600;
   color: var(--white);
 }
+
+@media (max-width: 575px){
+.footer-section p{
+  font-size: 12px;
+}
+}
+
 /* FOOTER SECTION END */
