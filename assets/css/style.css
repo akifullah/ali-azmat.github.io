@@ -519,7 +519,7 @@ body {
   text-transform: uppercase;
 }
 .upcoming .table tr td p {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--white);
   margin-bottom: 0;
 }
@@ -528,8 +528,8 @@ body {
   font-size: 22px;
   color: var(--white);
   text-decoration: none;
-  padding: 5px 15px;
-  border-radius: 20px;
+  padding: 5px 10px;
+  border-radius: 12px;
   border: 1px solid var(--white);
   display: flex;
   align-items: center;
@@ -544,8 +544,34 @@ body {
 }
 
 .upcoming .table tr td a.link-btn i {
-  font-size: 50px;
+  font-size: 34px;
   margin-left: 10px;
+}
+
+@media (max-width: 1399px){
+  .upcoming .table tr td p {
+    font-size: 14px;
+  }
+
+  
+.upcoming .table tr td a.link-btn {
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  transition: 0.5s ease;
+}
+
+.upcoming .table tr td a.link-btn i {
+  font-size: 24px;
+  margin-left: 7px;
+}
 }
 
 @media (max-width: 991px) {
@@ -675,7 +701,7 @@ body {
 }
 .footer-section p{
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 11px;
   color: var(--white);
   opacity: 0.8;
 }
