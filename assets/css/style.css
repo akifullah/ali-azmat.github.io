@@ -316,7 +316,7 @@ body {
 .mobile-nav .navs li a.active ,
 .mobile-nav .navs li a:hover {
   color: var(--black);
-  box-shadow: inset 200px 0px 0px 0px var(--primary-color);
+  box-shadow: inset 220px 0px 0px 0px var(--primary-color);
 }
 
 @media (max-width: 991px) {
