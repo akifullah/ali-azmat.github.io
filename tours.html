@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Azmat</title>
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+
+    <!-- FONTAWESOME 5 ICON CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- FONTAWESOME 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tours.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- NAVBAR SECTION START -->
+        <nav id="topNav" class="top-navbar d-flex align-items-center">
+            <button id="navToggler" class="nav-toggler d-block d-md-none"><i class="fa-solid fa-bars"></i></button>
+            <div class="home-icon" id="home">
+                <a href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="list-unstyled d-flex align-items-center m-0" id="menus">
+                    <!-- <li class="li1"><a href="#ali-section">ALI</a></li>
+                    <li class="li2"><a href="#album-section">Album</a></li> -->
+                    <li class="li1"><a href="./index.html">Home</a></li>
+
+                    <li class="li3"><a href="./tours.html">Tours</a></li>
+                    <li class="li4"><a href="#upcoming-section">Upcoming Tours</a></li>
+                    <li class="li5"><a href="#links-section">Links</a></li>
+                </ul>
+            </div>
+
+
+            <div class="right-section ms-auto d-flex align-items-center">
+                <form action="" id="topForm">
+                    <div class="form-wrap">
+                        <input type="text">
+                        <img src="assets/imgs/search.png" alt="">
+                    </div>
+                </form>
+                <ul class="list-unstyled d-flex align-items-center mb-0">
+                    <li class="li5"><a href="http://www.facebook.com/AliAzmatOfficial?fref=ts" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li class="li6"><a href="https://www.instagram.com/aazmatofficial/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li class="li7"><a
+                            href="https://open.spotify.com/artist/38lgkItatcpCc0I9hV4nEr?si=fgDqszotQuKI1aVH_MjS-A"
+                            target="_blank"><i class="fab fa-spotify"></i></a></li>
+                    <!-- <li class="li8"><a href="#"><i class="fab fa-soundcloud"></i></a></li> -->
+                </ul>
+
+
+
+            </div>
+
+        </nav>
+        <!-- NAVBAR SECTION START -->
+
+        <!-- MOBILE BAVBAR START -->
+        <div class="mobile-menu-wrapper" id="menuWrapper">
+            <div class="mobile-nav" id="mobileNav">
+
+                <button id="navClose" class="close-btn"><i class="far fa-times-circle"></i></button>
+
+                <div class="menu">
+                    <ul class="list-unstyled  navs m-0" id="mobile-menus">
+                        <li class="ml1"><a href="./index.html">Home</a></li>
+                        <!-- <li class="ml1"><a href="#ali-section">ALI</a></li>
+                        <li class="ml2"><a href="#album-section">Album</a></li> -->
+                        <li class="ml3"><a href="./tours.html">Tours</a></li>
+                        <li class="ml3"><a href="#upcoming-section">Upcoming Tours</a></li>
+                        <li class="ml4"><a href="#links-section">Links</a></li>
+                    </ul>
+
+                    <ul class="list-unstyled icons d-flex align-items-center mb-0">
+                        <li><a href="http://www.facebook.com/AliAzmatOfficial?fref=ts" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/aazmatofficial/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/38lgkItatcpCc0I9hV4nEr?si=fgDqszotQuKI1aVH_MjS-A"
+                                target="_blank"><i class="fab fa-spotify"></i></a></li>
+                        <!-- <li><a href="#"><i class="fab fa-soundcloud"></i></a></li> -->
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- MOBILE BAVBAR END -->
+
+
+
+        <!-- PAST TOURS -->
+        <section class="tour-section">
+            <div class="tour-heading">
+                <div class="overlay"></div>
+
+                <h1 class="tour-heading-title">
+                    PAST TOURS
+                </h1>
+            </div>
+
+            <div class="container past-tours-container">
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered " style="vertical-align: middle;">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Tour Name</th>
+                                        <th>Location</th>
+                                        <th>Date</th>
+                                        <th>Organizer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- page 1 -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ali Azmat x Nagorbaul James - Live in Dhaka</td>
+                                        <td>Dhaka, Bangladesh</td>
+                                        <td>November 14<sup>th</sup>, 2025</td>
+                                        <td>X FORCE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>Karachi, PK</td>
+                                        <td>October 25<sup>th</sup>, 2025</td>
+                                        <td>Dreamworld Resort</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td rowspan="5">USA Tour for Shaukat Khanum Hospital fundraising</td>
+                                        <td>Seattle, USA</td>
+                                        <td>September 20<sup>th</sup>, 2025</td>
+                                        <td rowspan="5">Shaukat Khanum Hospital, Social Cirkus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>San Diego, USA</td>
+                                        <td>September 21<sup>st</sup>, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Lansing, USA</td>
+                                        <td>September 26<sup>th</sup>, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Minneapolis, USA</td>
+                                        <td>September 27<sup>th</sup>, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Indianapolis, USA</td>
+                                        <td>September 28<sup>th</sup>, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>August 13<sup>th</sup>, 2025</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Junoon Reloaded 2025</td>
+                                        <td>Great Canadian Casino Resort, Toronto, CA</td>
+                                        <td>June 22<sup>nd</sup>, 2025</td>
+                                        <td>BIG (Billyard Insurance Group) Etobicoke</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Ali Azmat x Mustafa Zahid LIVE in London</td>
+                                        <td>Troxy Hall, London</td>
+                                        <td>May 18<sup>th</sup>, 2025</td>
+                                        <td>Event Britain</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>PLF Sukkur Chapter 2</td>
+                                        <td>February 2025</td>
+                                        <td><a href="#">Link to post</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>Green International University, Lahore</td>
+                                        <td>January 2025</td>
+                                        <td>Glory Events & PR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td rowspan="6">Fundraising Live Musical Concerts</td>
+                                        <td>Toronto, CA</td>
+                                        <td>October 11<sup>th</sup>, 2024</td>
+                                        <td rowspan="6">Shaukat Khanum Hospital Karachi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Mississauga, CA</td>
+                                        <td>October 12<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Windsor, CA</td>
+                                        <td>October 13<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Calgary, CA</td>
+                                        <td>October 18<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Vancouver, CA</td>
+                                        <td>October 19<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Edmonton, CA</td>
+                                        <td>October 20<sup>th</sup>, 2024</td>
+                                    </tr>
+
+
+
+                                    <!-- page 2 -->
+                                    <tr>
+                                        <td>19</td>
+                                        <td rowspan="6">Fundraising Live Musical Concerts</td>
+                                        <td>Regina, CA</td>
+                                        <td>October 25<sup>th</sup>, 2024</td>
+                                        <td rowspan="6">Shaukat Khanum Hospital Karachi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Ottawa, CA</td>
+                                        <td>October 26<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Montreal, CA</td>
+                                        <td>October 27<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Winnipeg, CA</td>
+                                        <td>October 31<sup>st</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>London, CA</td>
+                                        <td>November 1<sup>st</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Hamilton, CA</td>
+                                        <td>November 2<sup>nd</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Parvaaz Tour 2024</td>
+                                        <td>Toronto, CA</td>
+                                        <td>May 4<sup>th</sup>, 2024</td>
+                                        <td>Moe Sheikh & Sheraz Hussain, Realink Law</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Junoon Live in Houston</td>
+                                        <td>Houston, USA</td>
+                                        <td>May 18<sup>th</sup>, 2024</td>
+                                        <td rowspan="3">Rehan Siddiqi, Vibrant Media Group</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td rowspan="2">Parvaaz Tour 2024</td>
+                                        <td>Dallas, USA</td>
+                                        <td>May 19<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Chicago, USA</td>
+                                        <td>May 25<sup>th</sup>, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Ali Azmat Private Show</td>
+                                        <td>Karachi, PK</td>
+                                        <td>Feb 3<sup>rd</sup>, 2024</td>
+                                        <td>Social Cirkus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td>Alumni Festival 2024</td>
+                                        <td>ACP, Karachi, PK</td>
+                                        <td>January 28<sup>th</sup>, 2024</td>
+                                        <td>ACP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>New Year Fiesta 2024</td>
+                                        <td>Lahore, PK</td>
+                                        <td>Jan 5<sup>th</sup> - 6<sup>th</sup>, 2024</td>
+                                        <td>Parkview City</td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>Birmingham, UK</td>
+                                        <td>Oct 14<sup>th</sup>, 2023</td>
+                                        <td>APPNE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>Junoon Azaadi Tour</td>
+                                        <td>Dubai, UAE</td>
+                                        <td>Oct 6<sup>th</sup>, 2023</td>
+                                        <td>Book My Show, LIVE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>Azadi Fest</td>
+                                        <td>Lahore, PK</td>
+                                        <td>Aug 14<sup>th</sup>, 2023</td>
+                                        <td>DHA Lahore</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>Hunza, PK</td>
+                                        <td>May 6<sup>th</sup>, 2023</td>
+                                        <td>The Great Gig in the Sky</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>Ali Azmat LIVE in Concert</td>
+                                        <td>London, UK</td>
+                                        <td>May 14<sup>th</sup>, 2023</td>
+                                        <td>Indigo at the O2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>Azadi Tour 2023</td>
+                                        <td>Toronto, CA</td>
+                                        <td>March 18<sup>th</sup>, 2023</td>
+                                        <td>Khalid Siddiqi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>Grand Music Concert</td>
+                                        <td>Lahore, PK</td>
+                                        <td>Feb 10<sup>th</sup>-12<sup>th</sup>, 2023</td>
+                                        <td>ACPKHI</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>Pakistan Youth Festival 2023</td>
+                                        <td>Karachi, PK</td>
+                                        <td>January 29<sup>th</sup>, 2023</td>
+                                        <td>ACPKHI</td>
+                                    </tr>
+
+
+                                    <!-- page 3 -->
+
+                                    <tr>
+                                        <td>41</td>
+                                        <td>Ali Azmat LIVE</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>Jan 14<sup>th</sup>, 2023</td>
+                                        <td>Private Event</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>Nova Family Fest & Balloting Event</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>Jan 10<sup>th</sup>, 2023</td>
+                                        <td>Wave Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td>43</td>
+                                        <td>Mega Star League</td>
+                                        <td>Rawalpindi, PK</td>
+                                        <td>December 25<sup>th</sup>, 2022</td>
+                                        <td>Mustafa Zahid</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td rowspan="18">USA Tour 2022 (Fundraising Gala Dinner)</td>
+                                        <td>Green Boro</td>
+                                        <td>Dec 18<sup>th</sup>, 2022</td>
+                                        <td rowspan="18">Shaukat Khanam Memorial Hospital</td>
+                                    </tr>
+                                    <tr>
+                                        <td>45</td>
+                                        <td>Raleigh</td>
+                                        <td>Dec 17<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>Charlotte</td>
+                                        <td>Dec 16<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>47</td>
+                                        <td>New Orleans</td>
+                                        <td>Dec 11<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>Atlanta</td>
+                                        <td>Dec 10<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>49</td>
+                                        <td>Cincinnati</td>
+                                        <td>Dec 9<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>Houston</td>
+                                        <td>Dec 4<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>51</td>
+                                        <td>Little Rock</td>
+                                        <td>Dec 3<sup>rd</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52</td>
+                                        <td>Dallas</td>
+                                        <td>Dec 2<sup>nd</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>53</td>
+                                        <td>Tampa</td>
+                                        <td>Nov 20<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>54</td>
+                                        <td>New Jersey</td>
+                                        <td>Nov 19<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55</td>
+                                        <td>Utica Syracuse</td>
+                                        <td>Nov 18<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>56</td>
+                                        <td>Jackson Ville</td>
+                                        <td>Nov 13<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>57</td>
+                                        <td>Miami</td>
+                                        <td>Nov 12<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>58</td>
+                                        <td>Orlando</td>
+                                        <td>Nov 11<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>59</td>
+                                        <td>Boston</td>
+                                        <td>Nov 5<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60</td>
+                                        <td>New York</td>
+                                        <td>Nov 4<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>61</td>
+                                        <td>Washington D.C.</td>
+                                        <td>Oct 30<sup>th</sup>, 2022</td>
+                                    </tr>
+
+                                    <!-- page 4 -->
+
+                                    <tr>
+                                        <td>62</td>
+                                        <td rowspan="19">USA Tour 2022 (Fundraising Gala Dinner)</td>
+                                        <td>Phila Delphia</td>
+                                        <td>Oct 29<sup>th</sup>, 2022</td>
+                                        <td rowspan="19">Shaukat Khanam Memorial Hospital</td>
+                                    </tr>
+                                    <tr>
+                                        <td>63</td>
+                                        <td>Hartford</td>
+                                        <td>Oct 28<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>64</td>
+                                        <td>St Lious</td>
+                                        <td>Oct 23<sup>rd</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>65</td>
+                                        <td>Richmond</td>
+                                        <td>Oct 22<sup>nd</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>66</td>
+                                        <td>Detroit</td>
+                                        <td>Oct 21<sup>st</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>67</td>
+                                        <td>Buffalo</td>
+                                        <td>Oct 16<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>68</td>
+                                        <td>Chicago</td>
+                                        <td>Oct 15<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>69</td>
+                                        <td>Toledo</td>
+                                        <td>Oct 14<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>70</td>
+                                        <td>Oklahoma</td>
+                                        <td>Oct 9<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>71</td>
+                                        <td>Indiana Polis</td>
+                                        <td>Oct 7<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>72</td>
+                                        <td>Kansas City</td>
+                                        <td>Oct 1<sup>st</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>73</td>
+                                        <td>San Antonio</td>
+                                        <td>Sep 25<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>74</td>
+                                        <td>Austin</td>
+                                        <td>Sep 24<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>75</td>
+                                        <td>Phoenix</td>
+                                        <td>Sep 23<sup>rd</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>76</td>
+                                        <td>Loa Angeles</td>
+                                        <td>Sep 17<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>77</td>
+                                        <td>Sacra Mento</td>
+                                        <td>Sep 11<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>78</td>
+                                        <td>San Franscisco</td>
+                                        <td>Sep 10<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>79</td>
+                                        <td>Portland</td>
+                                        <td>Sep 9<sup>th</sup>, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>80</td>
+                                        <td>Seattle</td>
+                                        <td>Sep 4<sup>th</sup>, 2022</td>
+                                    </tr>
+
+                                    <!-- page 5 -->
+                                    <tr>
+                                        <td>81</td>
+                                        <td>Ali Azmat & Brian O Connel Concert</td>
+                                        <td>LA, USA</td>
+                                        <td>August 13<sup>th</sup>, 2022</td>
+                                        <td>Grand Alliance for Pakistan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>82</td>
+                                        <td>Ali Azmat & Brian O Connel Concert</td>
+                                        <td>Virginia, USA</td>
+                                        <td>August 14<sup>th</sup>, 2022</td>
+                                        <td>Rocking Entertainment LLC, Rehan Siddiqi, Des Pardes Restaurant</td>
+                                    </tr>
+                                    <tr>
+                                        <td>83</td>
+                                        <td>Music Concert</td>
+                                        <td>Toronto, CA</td>
+                                        <td>Sep 16<sup>th</sup>, 2022</td>
+                                        <td>Rehan Siddiqi, Karachi Point</td>
+                                    </tr>
+                                    <tr>
+                                        <td>84</td>
+                                        <td>Ali Azmat & Brian O Connel Azadi Tour 2022</td>
+                                        <td>Atlanta, Chicago, New Jersey, Dallas, Houston, LA, Sacramento, Washington
+                                            DC, Toronto, San Francisco</td>
+                                        <td>Aug 2022</td>
+                                        <td>Rehan Siddiqi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>85</td>
+                                        <td>Chand Raat Concert</td>
+                                        <td>Houston, USA</td>
+                                        <td>May 1<sup>st</sup>, 2022</td>
+                                        <td>Rehan Siddiqi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>86</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Lahore, PK</td>
+                                        <td>March 29<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>87</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Karachi, PK</td>
+                                        <td>March 26<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>88</td>
+                                        <td>CMH Eat '22</td>
+                                        <td>Lahore, PK</td>
+                                        <td>March 25<sup>th</sup>, 2022</td>
+                                        <td>Patient Welfare Society, 3DM Media Agency</td>
+                                    </tr>
+                                    <tr>
+                                        <td>89</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Karachi, PK</td>
+                                        <td>March 22<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>90</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Faisalabad, PK</td>
+                                        <td>March 19<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>91</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Lahore, PK</td>
+                                        <td>March 6<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>92</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>March 5<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>93</td>
+                                        <td>Junoon Live Concert</td>
+                                        <td>Dubai, UAE</td>
+                                        <td>Feb 18<sup>th</sup>, 2022</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>94</td>
+                                        <td>Zaitoon Family Carnival</td>
+                                        <td>Lahore, PK</td>
+                                        <td>Dec 31<sup>st</sup>, 2021</td>
+                                        <td>Zaitoon Official</td>
+                                    </tr>
+                                    <tr>
+                                        <td>95</td>
+                                        <td>Drive-In Concert</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>Dec 11<sup>th</sup>, 2021</td>
+                                        <td>Park View City</td>
+                                    </tr>
+                                    <tr>
+                                        <td>96</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Houston, USA</td>
+                                        <td>July 10<sup>th</sup>, 2021</td>
+                                        <td>Rehan Siddiqi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>97</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>March 5<sup>th</sup>-7<sup>th</sup>, 2021</td>
+                                        <td>Islamabad Tourism Festival</td>
+                                    </tr>
+                                    <tr>
+                                        <td>98</td>
+                                        <td>Junoon</td>
+                                        <td>Dubai, UAE</td>
+                                        <td>March 20<sup>th</sup>, 2020</td>
+                                        <td>Global Village Dubai 2020</td>
+                                    </tr>
+
+                                    <!-- page 6 -->
+                                    <tr>
+                                        <td>99</td>
+                                        <td>Pak Music Fest</td>
+                                        <td>Doha, Qatar</td>
+                                        <td>Jan 30<sup>th</sup>, 2020</td>
+                                        <td>Rahmodus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100</td>
+                                        <td>Ali Azmat & Ali Noor Live</td>
+                                        <td>Karachi, PK</td>
+                                        <td>Jan 11<sup>th</sup>, 2020</td>
+                                        <td>MUNIK XI, Entertainment Media Company</td>
+                                    </tr>
+                                    <tr>
+                                        <td>101</td>
+                                        <td>Junoon Reloaded 2019</td>
+                                        <td>Dubai, UAE</td>
+                                        <td>Nov 29<sup>th</sup>, 2019</td>
+                                        <td>Oberoi Events</td>
+                                    </tr>
+                                    <tr>
+                                        <td>102</td>
+                                        <td>SAG Fest</td>
+                                        <td>Pind Kala Shah Kaku, PK</td>
+                                        <td>Nov 22<sup>nd</sup>-24<sup>th</sup>, 2019</td>
+                                        <td>SA Gardens PK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>103</td>
+                                        <td>Dhaka International Folk Festival</td>
+                                        <td>Dhaka, Bangladesh</td>
+                                        <td>Nov 14<sup>th</sup> - 16<sup>th</sup>, 2019</td>
+                                        <td>Dhaka International Folk Festival</td>
+                                    </tr>
+                                    <tr>
+                                        <td>104</td>
+                                        <td rowspan="6">Junoon Reunion Tour USA & CA</td>
+                                        <td>Toronto, CA</td>
+                                        <td>Nov 1<sup>st</sup>, 2019</td>
+                                        <td rowspan="6">Rehan Siddiqi, Kamal Ki Entertainment, NRG Arena</td>
+                                    </tr>
+                                    <tr>
+                                        <td>105</td>
+                                        <td>Chicago, USA</td>
+                                        <td>Oct 26<sup>th</sup>, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>106</td>
+                                        <td>San Jose, USA</td>
+                                        <td>Oct 25<sup>th</sup>, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>107</td>
+                                        <td>Dallas, USA</td>
+                                        <td>Oct 20<sup>th</sup>, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>108</td>
+                                        <td>New Jersey, USA</td>
+                                        <td>Oct 18<sup>th</sup>, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>109</td>
+                                        <td>Houston, USA</td>
+                                        <td>Oct 12<sup>th</sup>, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>110</td>
+                                        <td>Ali Azmat Live Performance</td>
+                                        <td>Karachi, PK</td>
+                                        <td>Sep 21<sup>st</sup>, 2019</td>
+                                        <td>Mountain Dew Pakistan & JBnJaws Productions</td>
+                                    </tr>
+                                    <tr>
+                                        <td>111</td>
+                                        <td>Ali Azmat Live Performance</td>
+                                        <td>Dallas, USA</td>
+                                        <td>Sep 2<sup>nd</sup>, 2019</td>
+                                        <td>Rehan Siddiqi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>112</td>
+                                        <td>Ali Azmat Live Performance</td>
+                                        <td>Houston, USA</td>
+                                        <td>Sep 1<sup>st</sup>, 2019</td>
+                                        <td>Rehan Siddiqi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>113</td>
+                                        <td>The Ultimate Showdown</td>
+                                        <td>Lahore, PK</td>
+                                        <td>Aug 31<sup>st</sup>, 2019</td>
+                                        <td>Mountain Dew Pakistan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>114</td>
+                                        <td rowspan="2">Junoon Comeback Tour to UK</td>
+                                        <td>Leeds, London</td>
+                                        <td>Aug 26<sup>th</sup>, 2019</td>
+                                        <td rowspan="2">AXS.com, Shahid Afridi Foundation</td>
+                                    </tr>
+                                    <tr>
+                                        <td>115</td>
+                                        <td>Wembley, London</td>
+                                        <td>Aug 25<sup>th</sup>, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>116</td>
+                                        <td>Spring Fest 2019</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>April 12<sup>th</sup>-14<sup>th</sup>, 2019</td>
+                                        <td>DHA Islamabad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>117</td>
+                                        <td>Ali Azmat Live Concert</td>
+                                        <td>Islamabad, PK</td>
+                                        <td>April 13<sup>th</sup>, 2019</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>118</td>
+                                        <td>Ali Azmat Live at Corporate event in Muzaffarabad</td>
+                                        <td>Muzaffarabad, PK</td>
+                                        <td>April 6<sup>th</sup>, 2019</td>
+                                        <td>-</td>
+                                    </tr>
+
+
+                                    <!-- page 7 -->
+                                    <tr>
+                                        <td>119</td>
+                                        <td>Green Pakistan Fest</td>
+                                        <td>Karachi, PK</td>
+                                        <td>March 23<sup>rd</sup>, 2019</td>
+                                        <td>Meezan, Runway, PSO</td>
+                                    </tr>
+                                    <tr>
+                                        <td>120</td>
+                                        <td>Coke Fest</td>
+                                        <td>Lahore, PK</td>
+                                        <td>March 22<sup>nd</sup>-24<sup>th</sup>, 2019</td>
+                                        <td>Coke, Kashmir, Jazz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>121</td>
+                                        <td>Junoon - The comeback concert</td>
+                                        <td>Dubai, UAE</td>
+                                        <td>Jan 18<sup>th</sup>, 2019</td>
+                                        <td>OME Oberoi Middle East Events</td>
+                                    </tr>
+                                    <tr>
+                                        <td>122</td>
+                                        <td>Sooper Junoon Reunion Concert</td>
+                                        <td>Karachi, PK</td>
+                                        <td>Dec 25<sup>th</sup>, 2018</td>
+                                        <td>H&S Connect</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- PAST TOURS END -->
+
+
+        <!-- UPCOMING SECTION START -->
+        <section class="upcoming" id="upcoming-section">
+            <div class="container upcoming-container">
+                <h2>UPCOMING TOURS</h2>
+
+                <div class="row">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>01 Jabuary 2022</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Concert Name</strong></p>
+                                    </td>
+                                    <td>
+                                        <p>country</p>
+                                    </td>
+                                    <td>
+                                        <p><strong>City</strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="link-btn">Buy your ticket <i
+                                                class="fas fa-angle-left"></i></a>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- UPCOMING SECTION END -->
+
+
+
+        <!-- LINKS SECTION START -->
+        <section class="links-section" id="links-section">
+            <div class="container links-container">
+                <h2>LINKS</h2>
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="link text-start">
+                        <a href="http://www.facebook.com/AliAzmatOfficial?fref=ts" target="_blank">
+                            <h4>Facebook</h4>
+                        </a>
+                    </div>
+                    <div class="link text-center">
+                        <a href="https://www.instagram.com/aazmatofficial/" target="_blank">
+                            <h4>INSTAGRAM</h4>
+                        </a>
+                    </div>
+                    <div class="link text-end">
+                        <a href="https://open.spotify.com/artist/38lgkItatcpCc0I9hV4nEr?si=fgDqszotQuKI1aVH_MjS-A"
+                            target="_blank">
+                            <h4>SPOTIFY</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- LINKS SECTION END -->
+
+        <footer class="footer-section">
+            <div
+                class="container d-flex gap-1 flex-wrap align-items-center justify-content-center   justify-content-md-between">
+                <p>Digital Art Directed & Designed by <a href="https://theshuj.com/" target="_blank">TheShuj</a>.</p>
+                <p>Developed, Produced and Maintained by <a href="https://www.webstings.com/"
+                        target="_blank">WebStings</a></p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <!-- JQUERY CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- SWIPER SLIDER JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+
+    <script>
+
+        // LINK AND SECTION ACTIVATION
+        let sections = document.querySelectorAll("section");
+        let navLinks = document.querySelectorAll("#menus li a")
+        let mNavLinks = document.querySelectorAll("#mobile-menus li a")
+        window.addEventListener("scroll", () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 130;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute("id");
+                console.log(offset)
+                if (top >= offset && top < offset + height) {
+                    console.log(id)
+                    navLinks.forEach(link => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href") == "#" + id) {
+                            link.classList.add("active");
+                        }
+                    });
+                    mNavLinks.forEach(link => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href") == "#" + id) {
+                            link.classList.add("active");
+                            console.log(link)
+                        }
+                    });
+
+                    // console.log(document.querySelector('#menus li a[href*=' + id + ']'))
+                }
+
+            })
+        });
+
+        // GASAP ANIMATION
+        let tl = gsap.timeline();
+        let tl2 = gsap.timeline();
+
+        tl.from("#home", { y: -150, opacity: 0, ease: "back.out", duration: 1 });
+        tl.from("#menus .li1", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li2", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li3", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li4", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl.from("#menus .li5", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+
+        tl2.from("#topForm", { y: -150, opacity: 0, ease: "back.out", duration: 1 });
+        tl2.from("#navToggler", { x: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li5", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li6", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li7", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+        tl2.from(".li8", { y: -150, opacity: 0, ease: "back.out", duration: .3 });
+
+        let tl3 = gsap.timeline();
+
+        tl3.from(".s1", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s2", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s3", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s4", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s5", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s6", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s7", { x: 200, opacity: 0, duration: .3 })
+        tl3.from(".s8", { x: 200, opacity: 0, duration: .3 })
+
+
+        // NAVBAR TOGGLER
+        const navToggler = document.getElementById("navToggler");
+        const mobileNav = document.getElementById("mobileNav");
+        const navClose = document.getElementById("navClose");
+        const menuWrapper = document.getElementById("menuWrapper");
+        const topNav = document.getElementById("topNav");
+
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos < currentScrollPos) {
+                topNav.style.background = "#000";
+                topNav.style.position = "fixed";
+                topNav.style.top = "0";
+            }
+            prevScrollpos = currentScrollPos;
+            if (window.pageYOffset < 100) {
+                topNav.style.background = "transparent";
+
+            }
+        }
+
+
+        mobileNav.addEventListener("click", function (e) {
+            menuWrapper.classList.add("active");
+        }, true);
+        navToggler.addEventListener("click", function (e) {
+            menuWrapper.classList.add("active");
+
+            let tl4 = gsap.timeline();
+            tl4.from(".ml1", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+            tl4.from(".ml2", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+            tl4.from(".ml3", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+            tl4.from(".ml4", { x: 150, opacity: 0, duration: .3, ease: "back.out" })
+
+        });
+        navClose.addEventListener("click", function (e) {
+            menuWrapper.classList.remove("active");
+        });
+        document.addEventListener("click", function () {
+            menuWrapper.classList.remove("active");
+        }, true);
+
+
+        // ALBUM SLIDER 
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            slidesPerView: "20",
+            grabCursor: true,
+            centeredSlides: true,
+            initialSlide: 2,
+            loop: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 30,
+                modifier: 4,
+                slideShadows: true,
+            },
+            //   pagination: {
+            //     el: ".swiper-pagination",
+            //   },
+        });
+    </script>
+</body>
+
+</html>

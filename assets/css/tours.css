@@ -1,0 +1,41 @@
+.tour-heading {
+    width: 100%;
+    text-align: center;
+    padding: clamp(100px, 12vw, 180px) 0;
+    background-image: url('../imgs/hero-bg.png');
+    background-size: cover;
+    background-position: bottom right;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+}
+
+.tour-heading-title {
+    position: relative;
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 300;
+    letter-spacing: clamp(9px, 1.5vw, 18px);
+    margin: 0;
+    color: #00ff8c;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.past-tours-container{
+    margin: clamp(10px, 8vw, 100px) auto;
+}
+
+
+.tour-section table th, .tour-section table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
