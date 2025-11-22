@@ -29,13 +29,18 @@
     text-transform: uppercase;
 }
 
-.past-tours-container{
+.past-tours-container {
     margin: clamp(10px, 8vw, 100px) auto;
 }
 
 
-.tour-section table th, .tour-section table td {
+.tour-section table th,
+.tour-section table td {
     border: 1px solid #ddd;
     text-align: left;
     font-size: clamp(12px, 1.2vw, 16px);
+}
+
+#table-header {
+    scroll-margin-top: 150px;
 }
