@@ -46,7 +46,7 @@
                 <ul class="list-unstyled d-flex align-items-center m-0" id="menus">
                     <!-- <li class="li1"><a href="#ali-section">ALI</a></li>
                     <li class="li2"><a href="#album-section">Album</a></li> -->
-                    <li class="li1"><a href="./index.html">Home</a></li>
+                    <li class="li2"><a href="./index.html">Home</a></li>
 
                     <li class="li3"><a href="./tours.html">Tours</a></li>
                     <li class="li4"><a href="#upcoming-section">Upcoming Tours</a></li>
@@ -91,7 +91,7 @@
                         <li class="ml1"><a href="./index.html">Home</a></li>
                         <!-- <li class="ml1"><a href="#ali-section">ALI</a></li>
                         <li class="ml2"><a href="#album-section">Album</a></li> -->
-                        <li class="ml3"><a href="./tours.html">Tours</a></li>
+                        <li class="ml2"><a href="./tours.html">Tours</a></li>
                         <li class="ml3"><a href="#upcoming-section">Upcoming Tours</a></li>
                         <li class="ml4"><a href="#links-section">Links</a></li>
                     </ul>
@@ -1076,9 +1076,7 @@
                 let offset = sec.offsetTop - 130;
                 let height = sec.offsetHeight;
                 let id = sec.getAttribute("id");
-                console.log(offset)
                 if (top >= offset && top < offset + height) {
-                    console.log(id)
                     navLinks.forEach(link => {
                         link.classList.remove("active");
                         if (link.getAttribute("href") == "#" + id) {
@@ -1089,7 +1087,6 @@
                         link.classList.remove("active");
                         if (link.getAttribute("href") == "#" + id) {
                             link.classList.add("active");
-                            console.log(link)
                         }
                     });
 
@@ -1138,7 +1135,7 @@
 
 
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
+        function trackNavScroll() {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos < currentScrollPos) {
                 topNav.style.background = "#000";
@@ -1151,7 +1148,9 @@
 
             }
         }
+        window.onscroll = trackNavScroll;
 
+      
 
         mobileNav.addEventListener("click", function (e) {
             menuWrapper.classList.add("active");
