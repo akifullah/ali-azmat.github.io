@@ -699,6 +699,21 @@ body {
   padding: 0px 0;
   padding: 10px 0;
 }
+
+.footer-section .footer-links h5{
+  color: var(--white);
+  margin-bottom: 15px;
+}
+.footer-section .footer-links a{
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.8;
+  line-height: 1.8;
+  transition: .4s ease;
+}
+.footer-section .footer-links a:hover{
+  color: var(--primary-color);
+}
 .footer-section p{
   margin-bottom: 0;
   font-size: 11px;
